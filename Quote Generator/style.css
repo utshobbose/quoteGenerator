@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair", serif;
+}
+body{
+    background-image: url(peotryART.jpg); 
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+.poetry-box{
+    background: wheat;
+    width: 90%;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-attachment: fixed;
+
+}
+.poetry-box h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.poetry-box h2::after{
+    content: '';
+    width: 120px;
+    height: 3px;
+    border-radius: 3px;
+    background: burlywood;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.poetry-box blockquote{
+    font-size: 26px;
+    min-height: 80px;
+}
+.poetry-box blockquote::before, .poetry-box blockquote::after{
+    content: '"';
+    
+}
+.poetry-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.poetry-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: -20px;
+    background: linear-gradient(rosybrown, grey);
+    top: 50%;
+    left: -30px;
+}
+.poetry-box div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+button{
+    background: linear-gradient(lightcoral, salmon);
+    color: #fff;
+    border: 1px solid coral;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    justify-content: center;
+
+}
+button:hover{
+    background: linear-gradient(rgb(190, 172, 151), rgb(190, 172, 137));
+}
+.fa-facebook-f{
+    color: #654ba1;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.post-button{
+    background: transparent;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
